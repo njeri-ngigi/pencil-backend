@@ -3,8 +3,12 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-const { PORT = 3000 } = process.env;
+const { 
+  PORT = 3000,
+  CONNECTION_STRING = 'mongodb://localhost/test', 
+} = process.env;
 
 module.exports = {
-  PORT
+  PORT,
+  CONNECTION_STRING
 }
