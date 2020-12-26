@@ -1,9 +1,9 @@
-const { search } = require('./search');
+const { searchByQueryParam } = require('./search');
 const { addAllQuestions, getAllQuestions } = require('./question');
 const { addAllTopics, getAllTopics } = require('./topic');
 
 module.exports = {
-  search,
+  searchByQueryParam,
   addAllQuestions,
   getAllQuestions,
   getAllTopics,

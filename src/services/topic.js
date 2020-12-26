@@ -12,7 +12,12 @@ const insertManyTopics = async () => {
   });
 }
 
+const findTopicPaths = async (path) => {
+ return TopicModel.find({ path });
+}
+
 module.exports = {
   insertManyTopics,
   findAllTopics,
+  findTopicPaths,
 };

@@ -1,11 +1,11 @@
 const express = require('express');
 const {
-  search, addAllQuestions, getAllQuestions, getAllTopics, addAllTopics
+  searchByQueryParam, addAllQuestions, getAllQuestions, getAllTopics, addAllTopics
 } = require('./controllers');
 
 const router = express.Router();
 
-router.get('/search', search);
+router.get('/search', searchByQueryParam);
 router.get('/questions', getAllQuestions);
 router.post('/questions', addAllQuestions);
 router.get('/topics', getAllTopics);
