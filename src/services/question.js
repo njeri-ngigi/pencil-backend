@@ -21,8 +21,6 @@ const insertManyQuestions = async () => {
   const questions = reshapeQuestionData();
   return QuestionModel.insertMany(questions, {
     ordered: true,
-  }, (error) => {
-    console.error(error);
   });
 }
 

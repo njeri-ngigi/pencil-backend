@@ -1,22 +1,26 @@
 const { insertManyQuestions, findAllQuestions } = require("../services/question");
 
 const addAllQuestions = async (req, res) => {
-  const questions = await insertManyQuestions();
-  if (!questions) {
-    return res.status(500).send({ message: 'Something went terribly wrong.' });
+  try {
+    const questions = await insertManyQuestions();
+    return res.status(201).send({ questions });
+  } catch (e) {
+    console.error(e);
+    return res.status(500).send({ message: 'Something went terribly wrong. Data might already exist.' });
   }
-  res.status(201).send({ questions });
 };
 
 const getAllQuestions = async (req, res) => {
-  const questions = await findAllQuestions();
-  if (!questions) {
+  try {
+    const questions = await findAllQuestions();
+    return res.status(200).send({ questions });
+  } catch (e) {
+    console.error(e);
     return res.status(500).send({ message: 'Something went wrong. Try again.' });
   }
-  res.status(200).send({ questions });
 }
 
 module.exports = {
   addAllQuestions,
   getAllQuestions,
-}
+};
