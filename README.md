@@ -30,3 +30,4 @@ The database is hosted on [Mongo Atlas](https://cloud.mongodb.com/)
 
 ### App
 The app is hosted on Heroku
+Access the API via https://pencil-backend-shalon.herokuapp.com/api/v1
