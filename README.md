@@ -23,3 +23,10 @@ Pencil Backend is a Node API that uses MongoDB with Mongoose to store questions 
 |  /topics                  | POST    | add all topics to database from JSON file           |
 |  /topics                  | GET     | fetch all topics from database                      |
 |  /search?q=query          | GET     | returns an array questions with the annotation query|
+
+## Hosting
+### Database
+The database is hosted on [Mongo Atlas](https://cloud.mongodb.com/)
+
+### App
+The app is hosted on Heroku
