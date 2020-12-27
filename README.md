@@ -35,7 +35,7 @@ Access the API via https://pencil-backend-shalon.herokuapp.com/api/v1
 ## Queries
 To query the database make a get request to the route `https://pencil-backend-shalon.herokuapp.com/api/v1/search?q=<query>`
 E.g.
-https://pencil-backend-shalon.herokuapp.com/api/v1/search?q=Cell Structure and Organisation
+`https://pencil-backend-shalon.herokuapp.com/api/v1/search?q=Cell Structure and Organisation`
 should return
 ```
 {
@@ -84,7 +84,8 @@ should return
     ]
 }
 ```
-https://pencil-backend-shalon.herokuapp.com/api/v1/search?q=Explain how energy losses occur along food chains, and discuss the efficiency of energy transfer between trophic levels
+
+`https://pencil-backend-shalon.herokuapp.com/api/v1/search?q=Explain how energy losses occur along food chains, and discuss the efficiency of energy transfer between trophic levels`
 returns
 ```
 {
@@ -96,3 +97,4 @@ returns
     ]
 }
 ```
+
